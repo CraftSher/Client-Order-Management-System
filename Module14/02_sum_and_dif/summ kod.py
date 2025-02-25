@@ -1,29 +1,26 @@
 import math
-def summ(n):
+def summ(number):
     summ = 0
-    while n != 0:
-        digit = n % 10
+    while number != 0:
+        digit = number % 10
         summ += digit
-        n //= 10
+        number //= 10
     return summ
 
 
-def digit_summ(n):
+def digit_summ(number):
     total_digit = 0
-    while n != 0:
+    while number != 0:
         total_digit += 1
-        n //= 10
+        number //= 10
     return total_digit
 
 
-def main():
-    n = int(input('Введите число: '))
-    return n
+number = int(input('Введите число: '))
 
-
-n = main()
-a = summ(n)
-b = digit_summ(n)
-print('Сумма чисел:', a)
-print('Количество цифр в числе:', b)
-print('Разность суммы и количества цифр:', abs(a - b))
+number_summ = summ(number)
+number_digit = digit_summ(number)
+difference = number_summ - number_digit
+print('Сумма чисел:', number_summ)
+print('Количество цифр в числе:', number_digit)
+print('Разность суммы и количества цифр:', difference)
