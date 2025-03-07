@@ -1,3 +1,5 @@
+# TODO переписать программу OK
+
 number_skates = int(input('Кол-во коньков: '))
 skates = []
 use = 0

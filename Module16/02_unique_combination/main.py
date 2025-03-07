@@ -1,3 +1,5 @@
+# TODO переписать программу OK
+
 def merge_sorted_lists(list1, list2):
     merged_list = sorted(list1 + list2)
     unique_list = []
