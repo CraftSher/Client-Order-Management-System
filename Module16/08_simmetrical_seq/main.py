@@ -1,3 +1,5 @@
+# TODO переписать программу OK
+
 numbers = int(input('Кол-во чисел: '))
 subsequence = []
 mirror_subsequence = []

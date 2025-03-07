@@ -1,3 +1,5 @@
+# TODO переписать программу OK
+
 people_quantity = int(input('Кол-во человек: '))
 counting_rhyme = int(input('Какое число в считалке? '))
 print(f'Значит, выбывает каждый {counting_rhyme}-й человек')
