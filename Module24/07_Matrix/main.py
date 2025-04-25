@@ -1,6 +1,50 @@
-# TODO здесь писать код
+class Matrix:
+    def __init__(self, rows, cols):
+        self.rows = rows
+        self.cols = cols
+        self.data = [[0] * cols for _ in range(rows)]  # Инициализация матрицы 0
 
+    def add(self, other):
+        # Сложение матриц
+        if self.rows != other.rows or self.cols != other.cols:
+            raise ValueError("Размеры матриц не совпадают!")
+        result = Matrix(self.rows, self.cols)
+        for i in range(self.rows):
+            for j in range(self.cols):
+                result.data[i][j] = self.data[i][j] + other.data[i][j]
+        return result
 
+    def subtract(self, other):
+        # Вычитание матриц
+        if self.rows != other.rows or self.cols != other.cols:
+            raise ValueError("Размеры матриц не совпадают!")
+        result = Matrix(self.rows, self.cols)
+        for i in range(self.rows):
+            for j in range(self.cols):
+                result.data[i][j] = self.data[i][j] - other.data[i][j]
+        return result
+
+    def multiply(self, other):
+        # Умножение матриц
+        if self.cols != other.rows:
+            raise ValueError("Количество столбцов первой матрицы должно быть равно количеству строк второй матрицы!")
+        result = Matrix(self.rows, other.cols)
+        for i in range(self.rows):
+            for j in range(other.cols):
+                result.data[i][j] = sum(self.data[i][k] * other.data[k][j] for k in range(self.cols))
+        return result
+
+    def transpose(self):
+        # Транспонирование матрицы
+        result = Matrix(self.cols, self.rows)
+        for i in range(self.rows):
+            for j in range(self.cols):
+                result.data[j][i] = self.data[i][j]
+        return result
+
+    def __str__(self):
+        # Вывод матрицы в виде строки
+        return '\n'.join(' '.join(map(str, row)) for row in self.data)
 
 
 # Примеры работы с классом:
