@@ -12,7 +12,12 @@ def one_year_of_war():
     second_attacker = Attacker("Убийца Траур")
     healer = Healer("Монах Игнат")
     second_healer = Healer("Монах Ирэна")
-    good_team = [tank, attacker, second_attacker, second_healer, healer]
+
+    good_team = [tank, attacker, second_attacker, healer, second_healer]
+
+    print("Команда собрана:")
+    for hero in good_team:
+        print(hero)
 
     # Код ниже изменять нельзя!
 

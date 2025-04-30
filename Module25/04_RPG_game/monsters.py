@@ -1,6 +1,5 @@
 import random
 
-
 class Monster:
     max_hp = 150
     start_power = 10
