@@ -1,4 +1,9 @@
+# TODO между классами и после них 2 пустые строчки кода, а между методам 1 пустая строчка
+# TODO если используете pycharm используйте ctrl + alt + L
 class Property:
+    # TODO задайте константное значение как атрибут класса,
+    #  которое будет переопределяться для каждого класса наследника
+    # TAX_VALUE = 0
     def __init__(self, worth):
         self.__worth = worth
     def get_worth(self):
@@ -15,6 +20,7 @@ class Property:
         return NotImplementedError
 
 class Apartment(Property):
+    # TAX_VALUE = 1000
     def __init__(self, worth):
         super().__init__(worth)
     def calculate_tax(self):
@@ -51,6 +57,7 @@ class CountryHouse(Property):
         return tax_coun_house
 
 def main():
+    # TODO name и sur_name не используется
     name = input('Введите имя: ')
     sur_name = input('Введите фамилию: ')
     money_count = float(input('Введите количество денег на счету: '))
@@ -65,6 +72,7 @@ def main():
     elif property_type == 'дача' or property_type == 'загородный дом':
         my_property = CountryHouse(price_worth)
         tax_amount = my_property.calculate_tax()
+    # TODO если ввести неизвестное значение property_type, программа упадет с ошибкой
     if tax_amount <= money_count:
         print('Сумма на вашем счету хватает на налог.')
         print(f'Рассчитанный налог на имущество: {tax_amount}')

@@ -1,9 +1,13 @@
 import random
 import datetime
+# TODO после импортов, перед классами, между ними и после классов и функций по 2 пустые строчки кода
 
 KARMA_TO_ACHIEVE = 500
 
 class KillError(Exception):
+    # TODO добавьте кастомное сообщение для классов
+    #  def __init__(self):
+    #      super().__init__("Убийство. Вы и убили-с!")
     pass
 
 class DrunkError(Exception):
@@ -28,6 +32,7 @@ def one_day():
 
 def main():
     total_karma = 0
+    # TODO в данном случае это передача именованного параметра в функцию, поэтому пробел лишний: encoding='utf-8'
     with open('karma.log', 'a', encoding= 'utf-8') as log_file:
         while True:
             try:

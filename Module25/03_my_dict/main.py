@@ -6,6 +6,7 @@ class MyDict(dict):
         # Вызываем метод get() родительского класса (dict)
         value = super().get(key, default)
         # Проверяем, вернул ли родительский get() значение по умолчанию (None, если не был передан default)
+        # TODO данная конструкция лишняя, возвращайте сразу value
         if value is None and default == 0:
             return 0
         else:

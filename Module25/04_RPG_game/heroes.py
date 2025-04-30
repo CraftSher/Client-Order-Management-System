@@ -1,3 +1,4 @@
+# TODO импорт не используется
 import random
 
 class Hero:
@@ -170,3 +171,5 @@ class Attacker(Hero):
 
     def __str__(self):
         return f"{self.name}: Здоровье: {self.get_hp()}, Сила: {self.get_power()}, Множитель: {self.power_multiply}"
+
+# Принят

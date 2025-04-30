@@ -1,5 +1,6 @@
 import abc
 import math
+# TODO между классами и после них 2 пустые строчки кода, а между методам 1 пустая строчка
 
 
 class Shape(abc.ABC):
