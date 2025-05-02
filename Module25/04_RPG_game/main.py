@@ -2,7 +2,6 @@ import random
 from monsters import MonsterBerserk, MonsterHunter
 from heroes import Tank, Healer, Attacker
 
-
 def one_year_of_war():
     # Ниже приведен пример составления команды
     # Вы можете изменять состав команды, НО размер команды не должен быть более 5.

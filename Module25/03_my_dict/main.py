@@ -4,13 +4,9 @@ class MyDict(dict):
 
     def get(self, key, default=0):
         # Вызываем метод get() родительского класса (dict)
-        value = super().get(key, default)
         # Проверяем, вернул ли родительский get() значение по умолчанию (None, если не был передан default)
         # TODO данная конструкция лишняя, возвращайте сразу value
-        if value is None and default == 0:
-            return 0
-        else:
-            return value
+        return super().get(key, default)
 
 
 my_dict = MyDict({'a': 1, 'b': 2})

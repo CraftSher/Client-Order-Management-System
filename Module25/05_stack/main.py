@@ -4,14 +4,18 @@
 class Stack:
     def __init__(self):
         self.stack = []
+
     def add_elem(self, value):
         self.stack.append(value)
+
     def remove_elem(self):
         return self.stack.pop()
+
 
 class TaskManager:
     def __init__(self):
         self.stack = Stack()
+
     def new_task(self, task: str, priority: int):
         self.stack.add_elem((priority, task))
 
