@@ -1,3 +1,5 @@
+![Project Banner](banner.png)
+
 # Client Order Management System
 
 This is a simple Python-based command-line system for managing customer orders. It allows users to view, analyze, and update orders made by clients for various products.
