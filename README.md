@@ -1,5 +1,9 @@
 ![Project Banner](banner.png)
 
+![Python](https://img.shields.io/badge/python-3.7%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-Active-brightgreen)
+
 # Client Order Management System
 
 A simple Python-based command-line application for managing and analyzing customer orders. This system allows users to view all orders, analyze client purchase behavior, and add new orders easily.
