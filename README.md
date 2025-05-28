@@ -2,19 +2,19 @@
 
 # Client Order Management System
 
-This is a simple Python-based command-line system for managing customer orders. It allows users to view, analyze, and update orders made by clients for various products.
+A simple Python-based command-line application for managing and analyzing customer orders. This system allows users to view all orders, analyze client purchase behavior, and add new orders easily.
 
 ## Features
 
-- **Display All Orders**: View the complete list of customer orders.
-- **Client Order Count**: Find out how many orders a specific client has placed.
-- **Product Quantities**: See the total quantity of each product ordered.
-- **Top Clients**: Identify clients with the highest total number of items ordered.
-- **Add New Orders**: Add a new order with customer name, product, and quantity.
+- **Display All Orders**: View the complete list of customer orders.  
+- **Client Order Count**: Check how many orders a specific client has placed.  
+- **Product Quantities**: See the total quantity ordered for each product.  
+- **Top Clients**: Identify clients with the highest total number of items ordered.  
+- **Add New Orders**: Add a new order by specifying client name, product, and quantity.
 
 ## How It Works
 
-The system uses a list of dictionaries, where each dictionary represents an order with the following fields:
+Orders are stored as a list of dictionaries, each representing one order with the following structure:
 
 ```python
 {
@@ -24,17 +24,17 @@ The system uses a list of dictionaries, where each dictionary represents an orde
 }
 ```
 
-## Example Usage
+## How to Run
 
-To run the program, execute the following command in your terminal:
+Run the program from your terminal by executing:
 
 ```bash
 python inventory_manager.py
 ```
 
-## Example Output
+## Example Usage
 
-When you run the program, you can choose actions like:
+When running, the program shows a menu with options:
 
 ```
 1 - Display all orders  
@@ -46,8 +46,6 @@ When you run the program, you can choose actions like:
 ```
 
 ## Screenshot of Program Output
-
-*(Optional: add a screenshot in `assets/output_terminal.png`)*
 
 ![Terminal Output](assets/output_terminal.png)
 
